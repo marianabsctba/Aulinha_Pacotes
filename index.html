@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Por Dentro de um Pacote de Rede | Be Safe Academy</title>
 <style>
 :root{--bg:#070b18;--panel:#0d1428;--line:#202b52;--text:#eef3ff;--muted:#9aa7c7;--violet:#8b5cf6;--violet2:#6d28d9;--blue:#38bdf8;--green:#22c55e;--pink:#ec4899;--yellow:#facc15;--red:#ef4444;--gold:#d7b56d;--shadow:0 22px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.03)}
@@ -12,6 +12,85 @@
 .cert-panel{margin-top:16px;padding:16px}.checklist{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0}.check{border:1px solid #2b3565;background:#0a1025;border-radius:12px;padding:12px;color:#94a3b8;font-weight:800}.check.ok{border-color:#22c55e;color:#bbf7d0;background:rgba(34,197,94,.08)}.cert-wrap{max-height:430px;overflow:auto;border:1px solid #2c3560;border-radius:18px;background:#050711;padding:14px;margin-top:12px}.cert{width:980px;min-height:620px;margin:0 auto;position:relative;padding:54px 70px;background:radial-gradient(circle at 20% 15%,rgba(215,181,109,.15),transparent 30%),linear-gradient(135deg,#0a0d18,#101827 45%,#060811);border:3px solid #b68b3b;color:#f8f1da;box-shadow:inset 0 0 0 8px rgba(215,181,109,.08),0 30px 80px rgba(0,0,0,.4);overflow:hidden}.cert:before{content:"";position:absolute;inset:26px;border:1px solid rgba(215,181,109,.55);pointer-events:none}.cert h2{text-align:center;color:#e7c678;letter-spacing:.18em;font-size:20px;margin:0 0 26px}.cert .certifica{text-align:center;font-size:24px;letter-spacing:.05em}.cert .nome{text-align:center;font-size:46px;color:white;font-family:Georgia,serif;margin:22px 0;border-bottom:1px solid rgba(215,181,109,.5);padding-bottom:16px}.cert .aprendeu{margin:30px auto 0;max-width:760px;text-align:center;font-size:17px;line-height:1.55;color:#e5e7eb}.cert .assinatura{position:absolute;bottom:56px;left:70px;text-align:center;color:#f8f1da}.cert .assinatura b{font-family:Brush Script MT,Segoe Script,cursive;font-size:30px;color:white}.cert .data{position:absolute;right:70px;bottom:56px;text-align:right;font-size:13px;color:#d7b56d}.cert .seal{position:absolute;right:72px;top:72px;width:84px;height:84px;border-radius:50%;border:2px solid #d7b56d;display:grid;place-items:center;color:#d7b56d;font-weight:900}.cert-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .modal3d{position:fixed;inset:0;z-index:80;background:rgba(3,5,13,.86);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:22px}.modal3d.open{display:flex}.modal-card{width:min(1280px,96vw);height:min(720px,88vh);border:1px solid #3a2d76;border-radius:24px;background:radial-gradient(circle at 50% 0,rgba(56,189,248,.16),transparent 35%),linear-gradient(180deg,#0b1024,#050713);box-shadow:0 40px 120px rgba(0,0,0,.75);overflow:hidden;position:relative}.modal-head{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid #1f2b52}.modal-head h2{margin:0}.close3d{background:#120f25;color:white;border:1px solid #4338ca;border-radius:10px;padding:10px 14px;font-weight:900;cursor:pointer}.scene3d{position:relative;height:calc(100% - 78px);perspective:1200px;overflow:hidden}.floor3d{position:absolute;left:4%;right:4%;bottom:40px;height:360px;transform:rotateX(62deg);transform-origin:bottom;background:linear-gradient(90deg,rgba(56,189,248,.05) 1px,transparent 1px),linear-gradient(rgba(139,92,246,.08) 1px,transparent 1px);background-size:48px 48px;border:1px solid rgba(139,92,246,.25);box-shadow:0 0 80px rgba(139,92,246,.2) inset}.line3d{position:absolute;left:9%;right:9%;top:50%;height:8px;background:linear-gradient(90deg,#38bdf8,#8b5cf6,#22c55e);box-shadow:0 0 25px #8b5cf6;border-radius:99px;transform:translateY(-50%);z-index:1}.packet3d{position:absolute;top:calc(50% - 8px);left:9%;width:24px;height:24px;border-radius:8px;background:#e9d5ff;box-shadow:0 0 28px #c084fc;z-index:9}.modal3d.open .packet3d{animation:packetLine 5s linear infinite}@keyframes packetLine{0%{left:9%;transform:translateY(0) rotate(0)}100%{left:88%;transform:translateY(0) rotate(360deg)}}.devices3d{position:absolute;left:6%;right:6%;top:42%;display:grid;grid-template-columns:repeat(6,1fr);gap:24px;align-items:end;z-index:5}.device3d{text-align:center;transform:translateZ(0);filter:drop-shadow(0 28px 18px rgba(0,0,0,.45))}.device3d:hover{transform:translateY(-10px)}.devlabel{margin-top:18px;font-weight:900;color:#e0e7ff;text-shadow:0 0 10px #000}.pc3d,.rack3d,.wall3d,.dns3d,.cloud3d{margin:0 auto;position:relative;transform:skewY(-8deg) rotateX(8deg)}.pc3d{width:92px;height:62px;background:linear-gradient(135deg,#7dd3fc,#1e3a8a);border:3px solid #bae6fd;border-radius:10px;box-shadow:12px 12px 0 #0f172a,0 0 30px #38bdf8}.pc3d:after{content:"";position:absolute;width:34px;height:22px;background:#0f172a;left:29px;bottom:-26px;border-radius:4px}.rack3d{width:110px;height:72px;background:linear-gradient(135deg,#c4b5fd,#312e81);border-radius:12px;border:2px solid #ddd6fe;box-shadow:14px 14px 0 #111827,0 0 30px #8b5cf6}.rack3d:before{content:"";position:absolute;left:12px;right:12px;top:16px;height:8px;background:#0f172a;box-shadow:0 17px 0 #0f172a,0 34px 0 #0f172a}.rack3d:after{content:"••••";position:absolute;right:10px;top:8px;color:#22c55e;letter-spacing:3px}.wall3d{width:90px;height:96px;background:linear-gradient(135deg,#fb7185,#7f1d1d);border-radius:14px;border:2px solid #fecdd3;box-shadow:14px 14px 0 #111827,0 0 34px #ef4444}.wall3d:before{content:"";position:absolute;inset:10px;background:repeating-linear-gradient(0deg,transparent 0 12px,rgba(255,255,255,.22) 13px 15px),repeating-linear-gradient(90deg,transparent 0 18px,rgba(255,255,255,.16) 19px 21px)}.dns3d{width:78px;height:112px;background:linear-gradient(135deg,#86efac,#14532d);border:2px solid #bbf7d0;border-radius:12px;box-shadow:14px 14px 0 #111827,0 0 30px #22c55e}.dns3d:before{content:"DNS";position:absolute;left:0;right:0;top:18px;font-weight:900;color:#052e16}.cloud3d{width:130px;height:78px;background:linear-gradient(135deg,#e0f2fe,#334155);border-radius:50px;box-shadow:14px 14px 0 #111827,0 0 35px #38bdf8}.cloud3d:before,.cloud3d:after{content:"";position:absolute;border-radius:50%;background:inherit}.cloud3d:before{width:58px;height:58px;left:22px;top:-24px}.cloud3d:after{width:70px;height:70px;right:18px;top:-32px}.depth-note{position:absolute;left:30px;bottom:24px;color:#a5b4fc;font-weight:800}.modal-info{position:absolute;right:28px;bottom:24px;max-width:330px;border:1px solid #2f3b69;background:rgba(5,7,19,.78);border-radius:16px;padding:14px;color:#cbd5e1}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111827;color:white;border:1px solid #4c1d95;padding:12px 16px;border-radius:14px;z-index:99;display:none}.toast.show{display:block}
 @media(max-width:1100px){.grid,.learn,.lower,.start-grid{grid-template-columns:1fr}.steps{display:none}.network{grid-template-columns:repeat(2,1fr);height:auto}.network:before,.packet{display:none}.badges{display:none}.row{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.name-row{grid-template-columns:1fr}.devices3d{grid-template-columns:repeat(3,1fr);top:18%;gap:14px}.line3d{display:none}.packet3d{display:none}.modal-card{height:88vh}.cert{transform:scale(.72);transform-origin:top left}.cert-wrap{max-height:480px}}
+
+/* ===== Ajustes mobile reais ===== */
+button,input,select,textarea,.piece,.dropfield{font:inherit}
+button,.piece,.dropfield,.tab{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.start{overflow:auto;align-items:start;padding:16px;padding-top:max(16px,env(safe-area-inset-top))}
+.start-card{max-height:none}
+.app{width:100%}
+.card{min-width:0}
+img,canvas,svg{max-width:100%}
+.piece.selected{border-color:#facc15;background:rgba(250,204,21,.16);box-shadow:0 0 0 3px rgba(250,204,21,.12);color:#fde68a}
+.dropfield.ready{border-color:#facc15;background:rgba(250,204,21,.08);color:#fde68a}
+@media(max-width:720px){
+  body{background:#070b18}
+  .app{padding:10px 10px 18px}
+  .top{display:grid;grid-template-columns:1fr;gap:10px;margin-bottom:10px}
+  .back{width:100%;padding:11px 14px}
+  .title h1{font-size:21px;line-height:1.15}
+  .title p{font-size:13px;line-height:1.35}
+  .start-card{padding:18px;border-radius:18px}
+  .start-card h1{font-size:26px;line-height:1.1}
+  .start-card p{font-size:14px}
+  .start-mini{padding:13px}
+  .grid,.learn,.lower,.start-grid{grid-template-columns:1fr!important}
+  .builder,.stage,.tabs,.visual,.explainpanel,.cert-panel{padding:12px}
+  .stage{min-height:auto}
+  .stage-head{display:grid;gap:10px}
+  .stage-head .mini-btn{width:100%}
+  .dragzone{grid-template-columns:1fr 1fr;gap:8px}
+  .piece{padding:13px 10px;min-height:48px;display:grid;place-items:center}
+  .section{padding:10px}
+  .section-title{font-size:13px}
+  .row{grid-template-columns:1fr!important;gap:6px}
+  .dropfield,input,select,textarea{min-height:46px;font-size:16px}
+  .actions{grid-template-columns:1fr!important}
+  .btn,.mini-btn{width:100%;min-height:46px}
+  .progressbox{width:100%;margin:12px 0 20px;padding:12px}
+  .network{display:grid;grid-template-columns:1fr!important;gap:10px;margin:0 0 14px}
+  .node{display:grid;grid-template-columns:54px 1fr;grid-template-areas:"icon title" "icon meta" "icon desc";text-align:left;align-items:center;border:1px solid #26325f;background:rgba(8,13,27,.6);border-radius:14px;padding:10px}
+  .node .icon{grid-area:icon;height:auto;font-size:34px}
+  .node b{grid-area:title;margin:0}
+  .node small{grid-area:meta;margin:2px 0 0}
+  .node span{grid-area:desc;margin:2px 0 0}
+  .log,.explain{padding:12px;min-width:0}
+  .logline{font-size:12px;overflow-wrap:anywhere}
+  .nat-diagram{font-size:26px}
+  .packetbar{grid-template-columns:1fr;overflow:visible}
+  .part{border-right:0;border-bottom:1px solid rgba(255,255,255,.12);padding:13px 8px}
+  .cards{grid-template-columns:1fr}
+  .stack{max-width:none}
+  .checklist{grid-template-columns:1fr!important}
+  .cert-wrap{padding:10px;overflow:visible;max-height:none}
+  .cert{width:100%;min-height:560px;padding:40px 24px 130px;border-width:2px}
+  .cert:before{inset:14px}
+  .cert h2{font-size:15px;margin-bottom:18px}
+  .cert .seal{right:24px;top:24px;width:62px;height:62px;font-size:11px}
+  .cert .certifica{font-size:18px;margin-top:36px}
+  .cert .nome{font-size:30px;line-height:1.05;margin:18px 0;padding-bottom:12px;overflow-wrap:anywhere}
+  .cert .aprendeu{font-size:14px;line-height:1.45;margin-top:18px}
+  .cert .assinatura{left:24px;bottom:34px}
+  .cert .assinatura b{font-size:25px}
+  .cert .data{right:24px;bottom:34px}
+  .modal3d{padding:10px}
+  .modal-card{width:100%;height:92vh;border-radius:18px}
+  .modal-head{display:grid;gap:10px;padding:14px}
+  .modal-head h2{font-size:20px}
+  .close3d{width:100%;min-height:44px}
+  .scene3d{height:calc(100% - 140px);overflow:auto}
+  .devices3d{position:relative;left:auto;right:auto;top:auto;display:grid;grid-template-columns:1fr!important;padding:18px;gap:18px}
+  .device3d{transform:none!important}
+  .floor3d,.depth-note,.modal-info{display:none}
+  .pc3d,.rack3d,.wall3d,.dns3d,.cloud3d{transform:none}
+  .toast{left:10px;right:10px;bottom:12px;transform:none;text-align:center}
+}
+@media(max-width:380px){
+  .dragzone{grid-template-columns:1fr}
+  .cert .nome{font-size:25px}
+  .cert .aprendeu{font-size:13px}
+}
+
 </style>
 </head>
 <body>
@@ -32,10 +111,42 @@ function setStep(n){$$('.step').forEach((s,i)=>{s.classList.toggle('active',i===
 function updateChecks(){Object.keys(state).forEach(k=>{const el=$(`[data-check="${k}"]`); if(el) el.classList.toggle('ok',state[k])});const all=Object.values(state).every(Boolean);$('#unlockCert').disabled=!all;$('#unlockCert').textContent=all?'🏅 Ver certificado':'🔒 Certificado bloqueado'}
 $('#startBtn').onclick=()=>{const n=$('#studentNameInput').value.trim();if(!n){toast('Digite seu nome para iniciar, bebê.');return}studentName=n;state.name=true;$('#startScreen').style.display='none';updateChecks()};
 $$('.flag').forEach(b=>b.onclick=()=>b.classList.toggle('on'));
-$$('.piece').forEach(p=>p.addEventListener('dragstart',e=>{e.dataTransfer.setData('target',p.dataset.target);e.dataTransfer.setData('value',p.dataset.value);e.dataTransfer.setData('label',p.textContent)}));
-$$('.dropfield').forEach(f=>{f.addEventListener('dragover',e=>e.preventDefault());f.addEventListener('drop',e=>{e.preventDefault();const target=e.dataTransfer.getData('target'),value=e.dataTransfer.getData('value');if(target!==f.dataset.field){toast('Esse campo não combina. A rede julgou em silêncio.');return}f.textContent=value;f.classList.add('filled','drop-ok');values[target]=value;const piece=$(`.piece[data-target="${target}"]`);if(piece)piece.classList.add('used');score+=20;$('#score').textContent=score;setTimeout(()=>f.classList.remove('drop-ok'),850);checkBuild()})});
+let selectedPiece=null;
+function markReady(){
+  $$('.piece').forEach(p=>p.classList.toggle('selected',selectedPiece===p));
+  $$('.dropfield').forEach(f=>f.classList.toggle('ready',!!selectedPiece && !f.classList.contains('filled')));
+}
+function fillField(f,target,value){
+  if(target!==f.dataset.field){toast('Esse campo não combina. A rede julgou em silêncio.');return}
+  if(f.classList.contains('filled')){toast('Esse campo já foi preenchido. Limpe se quiser refazer.');return}
+  f.textContent=value;
+  f.classList.add('filled','drop-ok');
+  values[target]=value;
+  const piece=$(`.piece[data-target="${target}"]`);
+  if(piece)piece.classList.add('used');
+  selectedPiece=null;
+  markReady();
+  score+=20;
+  $('#score').textContent=score;
+  setTimeout(()=>f.classList.remove('drop-ok'),850);
+  checkBuild();
+}
+$$('.piece').forEach(p=>{
+  p.addEventListener('dragstart',e=>{e.dataTransfer.setData('target',p.dataset.target);e.dataTransfer.setData('value',p.dataset.value);e.dataTransfer.setData('label',p.textContent)});
+  p.addEventListener('click',()=>{
+    if(p.classList.contains('used')) return;
+    selectedPiece = selectedPiece===p ? null : p;
+    markReady();
+    toast(selectedPiece?'Agora toque no campo correto para encaixar.':'Seleção cancelada.');
+  });
+});
+$$('.dropfield').forEach(f=>{
+  f.addEventListener('dragover',e=>e.preventDefault());
+  f.addEventListener('drop',e=>{e.preventDefault();fillField(f,e.dataTransfer.getData('target'),e.dataTransfer.getData('value'))});
+  f.addEventListener('click',()=>{if(!selectedPiece){toast('Toque primeiro em uma peça acima.');return}fillField(f,selectedPiece.dataset.target,selectedPiece.dataset.value)});
+});
 function checkBuild(){if(['macDst','ipDst','ttl','dport'].every(k=>values[k])){state.build=true;$('#send').disabled=false;setStep(1);toast('Pacote montado. Agora pode enviar.');updateChecks()}}
-$('#clear').onclick=()=>{values.macDst=values.ipDst=values.ttl=values.dport=undefined;$$('.dropfield').forEach(f=>{f.classList.remove('filled');f.textContent='solte '+({'macDst':'MAC destino','ipDst':'IP destino','ttl':'TTL','dport':'Porta TCP'}[f.dataset.field])+' aqui'});$$('.piece').forEach(p=>p.classList.remove('used'));score=0;$('#score').textContent='0';$('#fill').style.width='0%';$('#pct').textContent='0%';$('#packet').classList.remove('run');$('#log').innerHTML='<div class="logline"><em>00:00:00</em> Pacote aguardando montagem...</div>';state.build=state.send=state.travel=false;$('#send').disabled=true;setStep(0);updateChecks()};
+$('#clear').onclick=()=>{values.macDst=values.ipDst=values.ttl=values.dport=undefined;selectedPiece=null;$$('.dropfield').forEach(f=>{f.classList.remove('filled','ready');f.textContent='solte '+({'macDst':'MAC destino','ipDst':'IP destino','ttl':'TTL','dport':'Porta TCP'}[f.dataset.field])+' aqui'});$$('.piece').forEach(p=>p.classList.remove('used','selected'));score=0;$('#score').textContent='0';$('#fill').style.width='0%';$('#pct').textContent='0%';$('#packet').classList.remove('run');$('#log').innerHTML='<div class="logline"><em>00:00:00</em> Pacote aguardando montagem...</div>';state.build=state.send=state.travel=false;$('#send').disabled=true;setStep(0);updateChecks()};
 $('#send').onclick=()=>{if(!state.build){toast('Monte todos os campos antes de enviar.');return}state.send=true;setStep(2);updateChecks();const ip=$('#ipSrc').value,dst=values.ipDst,sp=$('#sport').value,dp=values.dport;$('#pcip').textContent=ip;$('#serverip').textContent=dst;$('#before').textContent=`${ip}:${sp}`;$('#after').textContent=`189.XX.XX.25:${62000+Math.floor(Math.random()*999)}`;$('#packet').classList.remove('run');void $('#packet').offsetWidth;$('#packet').classList.add('run');let p=0;const timer=setInterval(()=>{p+=7;if(p>=100){p=100;clearInterval(timer);score+=120;$('#score').textContent=score;state.travel=true;setStep(3);updateChecks();toast('Jornada concluída. Agora estude as camadas e abra o 3D.')}$('#fill').style.width=p+'%';$('#pct').textContent=p+'%'},300);const lines=['Pacote criado no seu computador',`Switch recebeu e encaminhou por MAC destino ${values.macDst}`,`Roteador verificou rota para ${dst} usando IP`,`NAT alterou origem privada ${ip} para IP público`,`Firewall analisou porta ${dp}/TCP e flags selecionadas`,'TLS protegeu a conversa da aplicação quando HTTPS foi usado','Pacote entregue ao servidor de destino. Ninguém chorou. Ainda.'];$('#log').innerHTML='';lines.forEach((l,i)=>setTimeout(()=>{$('#log').innerHTML+=`<div class="logline"><em>00:00:0${i}</em> ${l}</div>`},i*520))};
 const lessons={geral:['Explicação simples','<b>Pacote</b> é como uma carta digital. Cada camada adiciona informações importantes para que ele chegue ao destino correto. Ethernet resolve o “para quem eu entrego aqui dentro”, IP resolve “para qual rede eu vou”, TCP resolve “qual conversa é essa” e o payload carrega a mensagem.'],ethernet:['Ethernet - Camada 2','Ethernet entrega o quadro dentro da rede local. Ela usa MAC de origem e MAC de destino. Switches normalmente tomam decisão olhando essa camada.'],ip:['IP - Camada 3','IP permite que o pacote viaje entre redes. O roteador olha o IP de destino, escolhe a rota e reduz o TTL a cada salto para evitar pacote zumbi vagando eternamente.'],tcp:['TCP - Camada 4','TCP identifica a conversa por portas e controla a sessão. Flags como SYN e ACK ajudam a iniciar e confirmar comunicação.'],dados:['Dados - Payload','Payload é o conteúdo da aplicação: uma requisição HTTP, uma consulta DNS, uma mensagem, um arquivo.'],encap:['Encapsulamento','Encapsular é adicionar cabeçalhos ao dado original. A aplicação entrega dados ao TCP, o TCP adiciona controle, o IP adiciona roteamento e o Ethernet adiciona entrega local.']};
 let viewedTabs=new Set(['geral']);$$('.tab').forEach(t=>t.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');const[a,b]=lessons[t.dataset.tab];$('#lessonTitle').textContent=a;$('#lessonText').innerHTML=b;viewedTabs.add(t.dataset.tab);if(viewedTabs.size>=6){state.learn=true;updateChecks()}});
